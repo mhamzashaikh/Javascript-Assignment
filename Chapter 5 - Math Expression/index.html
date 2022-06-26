@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5 - JavaScript</title>
+</head>
+<body>
+    
+    <script>
+        // Q1
+
+        var num1 = 3;
+        var num2 = 5;
+        document.write("Sum of "+num1 +" and "+ num2+ " is "+ (num1+num2));
+         
+        // Q2
+
+        var num1 = 8;
+        var num2 = 3;
+        document.write("Subtract "+num1 +" and "+ num2+ " equal to "+ (num1-num2));
+
+        // Q3
+
+        var x;
+        console.log("Value after variable declaration is" );
+        x = 5;
+        console.log("Initial value: "+x);
+        x++;
+        console.log("Value after increment is: "+x );
+        x = x+7;
+        console.log("Value after adding 7 is: "+(x) );
+        x--;
+        console.log("Value after decrement is: "+x );
+
+        console.log("The remainder is "+(x%3) );
+
+         
+
+    // Q4
+
+    console.log("Total cost to buy 5 tickets to a movie is "+(5*600)+"PKR");
+
+    // Q5
+    // Display Table of 4.
+
+    var table = 4;
+    for(var i=1; i<=10; i++){
+        console.log(table+" x "+i+ " = "+(table*i));
+    }
+
+    // Q6
+    // Temperature Converter
+
+    var myCelsiusTemp = prompt("Enter Temp in Celsius: ");
+    var myFahrenTemp = prompt("Enter Temp in Fahrenheit: ");
+
+    function convertCintoF(celsius){
+        return ((celsius * 9/5 ) + 32);
+
+    }
+    function convertFintoC(fahrenheit){
+        return ((fahrenheit - 32 ) * 5/9);
+
+    }
+
+
+    var myCTemp = convertCintoF(myCelsiusTemp);
+    var myFTemp = convertFintoC(myFahrenTemp);
+
+    console.log(myCelsiusTemp+" C is "+ myCTemp+" F");
+    console.log(myFahrenTemp+" F is "+ myFTemp+" C");
+
+
+    // Q7
+
+    var priceOfItem1 = 650;
+    var priceOfItem2 = 100;
+
+    var Quantity1 = prompt("Enter Quantity for Item 1");
+    var Quantity2 = prompt("Enter Quantity for Item 2");
+
+    var fixedShipCharges = 100;
+
+    console.log("Price of item 1: "+ priceOfItem1);
+    console.log("Quantity of item 1: "+ Quantity1);
+    
+    
+    console.log("Price of item 2: "+ priceOfItem2);
+    console.log("Quantity of item 2: "+ Quantity2);
+
+    console.log("Shipping Charges "+fixedShipCharges);
+
+    console.log("Total Cost of your order is "+ ((priceOfItem1*Quantity1)+(priceOfItem2*Quantity2)+fixedShipCharges));
+
+
+    // Q8 
+    // Percentage Generator
+    
+    var totalMarks =  980;
+    var marksObtained = 804;
+    console.log("Percentage : "+((marksObtained/totalMarks)*100)+"%");
+
+
+
+    // Q9
+    // Currency  Exchanger
+
+    // USD to Pkr
+    // SAR to Pkr
+
+    var usd = 25;
+
+    var usdToPkr = usd*210;
+
+    console.log(usd +"$ in Pkr is "+ usdToPkr);
+
+
+    // Q10
+
+    var randomNumber = 2;
+    console.log(((randomNumber+5)*10)/2);
+
+
+    // Q11
+
+    var currentYear = 2022;
+    var birthYear = 2003;
+
+    console.log(`You age is ${currentYear-birthYear}`)
+
+
+    // Q12
+    // Geometrizer
+
+    var radius = 20;
+    var PI = 3.142;
+
+    var circumferenceCircle = 2*PI*radius;
+
+    var areaOfCircle = (PI)*(radius**2);
+
+
+    console.log("Radius of a circle: "+ radius);
+    console.log("The circumference is: "+ circumferenceCircle);
+    console.log("The area is: "+ areaOfCircle);
+
+    // Q13
+    // Lifetime Supply Calculator
+
+    var favSnack = prompt("Your favourite snack : ");
+    var currentAge = 19;
+    var maxAge = 65;
+    var snacksPerDay = 3;
+
+    var ageDifference = maxAge - currentAge;
+
+    console.log("Favourite Snack: "+ favSnack);
+    console.log("Current Age: "+ currentAge);
+    console.log("Estimated Maximum Age: "+ maxAge);
+    console.log("Amount of snacks per day: "+ snacksPerDay);
+    console.log("You will need "+(ageDifference*snacksPerDay)+" "+ favSnack + " to last you until the ripe old age of "+maxAge );
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    </script>
+</body>
+</html>
